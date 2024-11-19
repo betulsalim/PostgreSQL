@@ -127,6 +127,24 @@ DELETE from employee WHERE name = '"Eve Morphew"' ;
 
 DELETE from employee WHERE birthday = '"2006-11-29"';
 
+
+
+
+
+
+
+
+//ödev 9
+SELECT city, country FROM city
+JOIN country ON country.country_id = city.country_id;
+
+SELECT first_name, last_name FROM customer
+JOIN payment ON payment.customer_id = customer.customer_id;
+
+
+SELECT rental.rental_id, first_name, last_name FROM customer
+JOIN rental ON rental.customer_id = customer.customer_id;
+
 DELETE from employee WHERE email = '"jewan7@amazon.de"';
 
 DELETE from employee WHERE name = '"Bunnie Thirst"';
